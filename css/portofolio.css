@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0%;
+}
+
+
+nav {
+    position: fixed;
+    /* Navbar akan tetap di bagian atas */
+    top: 0;
+    /* Menempatkan navbar di atas halaman */
+    left: 0;
+    /* Menempatkan navbar di sisi kiri halaman */
+    width: 99%;
+    /* Lebar navbar mengisi seluruh lebar halaman */
+    z-index: 1000;
+    /* Z-index untuk memastikan navbar tampil di atas konten lain */
+}
+
+.navbar-img img {
+    width: 100%;
+    /* Biarkan lebar gambar menyesuaikan */
+    height: auto;
+    /* Biarkan tinggi gambar menyesuaikan proporsi */
+    opacity: 0.9;
+    /* Atur tingkat transparansi */
+}
+
+.navbar-img {
+    position: fixed;
+    /* Navbar akan tetap di bagian atas */
+    top: 0;
+    /* Menempatkan navbar di atas halaman */
+    left: 0;
+    /* Menempatkan navbar di sisi kiri halaman */
+    width: 6%;
+    /* Lebar navbar mengisi seluruh lebar halaman */
+    z-index: 1000;
+    /* Z-index untuk memastikan navbar tampil di atas konten lain */
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /* Untuk membagi teks ke pinggir */
+    border: 1px solid #ccc;
+    /* Border untuk visualisasi */
+}
+
+.left {
+    width: 70%;
+    /* Lebar setiap teks */
+    padding: 10px;
+    /* Ruang di sekitar teks */
+}
+
+.right {
+    padding-right: 2%;
+    text-align: right;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: right;
+    background-color: #ffffff;
+    padding: 30px;
+    opacity: 0.9;
+    /* Atur tingkat transparansi */
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    padding: 1px;
+    color: blue;
+    font-weight: bold;
+}
+
+h6 {
+    text-align: center;
+}
+
+aside {
+    width: 15%;
+}
+
+aside img {
+    border-radius: 50%;
+    width: 80%;
+    height: 100%;
+}
+
+
+nav {
+    display: flex;
+    justify-content: right;
+    background-color: #fafbfa;
+    padding: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    padding: 1px;
+    color: blue;
+    font-weight: bold;
+}
+
+.personal {
+    font-size: 20px;
+    background-color: yellow;
+    padding: 2px;
+    width: 13%;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-top: 1%;
+}
+
+.personal-detail {
+    max-width: 90%;
+    margin: 10px auto;
+    background-color: #f8f8f8;
+    padding-top: 5%;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.personal-detail aside {
+    padding: 1%;
+    margin: 0 auto;
+    /* Memberikan margin otomatis di sisi kiri dan kanan */
+    width: fit-content;
+    /* Membuat lebar aside mengikuti lebar isi kontennya */
+}
+
+.personal-detail aside img {
+    display: flex;
+    justify-content: center;
+    /* Membuat konten berada di tengah secara horizontal */
+    align-items: center;
+    /* Membuat konten berada di tengah secara vertikal */
+    height: 30vh;
+    /* Tinggi container mengisi seluruh tinggi viewport */
+}
+
+.personal-detail .tentang {
+    text-align: center;
+}
+
+.personal-detail h2 {
+    margin-top: 0;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.personal-detail p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.personal-detail .section {
+    margin-bottom: 15px;
+}
+
+.personal-detail .section:last-child {
+    margin-bottom: 0;
+}
+
+.personal-detail .section strong {
+    display: inline-block;
+    width: 110px;
+    font-weight: bold;
+}
+
+
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Membuat tiga kolom dengan lebar yang sama */
+    grid-gap: 20px;
+    /* Ruang antara setiap elemen */
+}
+
+.skill-item {
+    background-color: #f6ebeb;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-level {
+    font-size: 16px;
+    color: #7f7f7f;
+}
+
+
+
+#footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#footer a:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+#social-media {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    #footer {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #social-media {
+        align-items: center;
+        margin-top: 10px;
+    }
+}

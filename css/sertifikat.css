@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0%;
+}
+
+nav {
+    position: fixed; /* Navbar akan tetap di bagian atas */
+  top: 0; /* Menempatkan navbar di atas halaman */
+  left: 0; /* Menempatkan navbar di sisi kiri halaman */
+  width: 99%; /* Lebar navbar mengisi seluruh lebar halaman */
+  z-index: 1000; /* Z-index untuk memastikan navbar tampil di atas konten lain */
+}
+.navbar-img img {
+    width: 100%; /* Biarkan lebar gambar menyesuaikan */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi */
+    opacity: 0.9; /* Atur tingkat transparansi */
+}
+
+.navbar-img {
+    position: fixed; /* Navbar akan tetap di bagian atas */
+  top: 0; /* Menempatkan navbar di atas halaman */
+  left: 0; /* Menempatkan navbar di sisi kiri halaman */
+  width: 8%; /* Lebar navbar mengisi seluruh lebar halaman */
+  z-index: 1000; /* Z-index untuk memastikan navbar tampil di atas konten lain */
+}
+
+
+nav {
+    display: flex;
+    justify-content: right;
+    background-color: #ffffff;
+    padding: 30px;
+    opacity: 0.9; /* Atur tingkat transparansi */
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    padding: 1px;
+    color: blue;
+    font-weight: bold;
+}
+
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+section {
+    background-color: #f1f1f1;
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 3%;
+}
+
+h1 {
+    padding-top: 5%;
+    text-align: center;
+}
+
+h2 {
+    color: #000000;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+/* button*/
+@keyframes changeColor {
+    0% { background-color: #007bff; } /* Warna awal */
+    50% { background-color: #ff63ff; } /* Warna tengah */
+    100% { background-color: #007bff; } /* Warna akhir (kembali ke awal) */
+}
+
+/* Menentukan tampilan tombol */
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Warna awal tombol */
+    color: #200180;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: changeColor 5s infinite; /* Menerapkan animasi dengan durasi 2 detik dan berulang */
+}
+
+
+
+
+
+#footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#footer a:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
